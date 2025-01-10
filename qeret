@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зміна фону</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 20px;
+      transition: background-color 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <h1>Натисніть кнопку, щоб змінити фон</h1>
+  <button onclick="changeBackground()">Змінити фон</button>
+
+  <script>
+    function changeBackground() {
+      const colors = ['#FF5733', '#33FF57', '#3357FF', '#F1C40F'];
+      document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    }
+  </script>
+</body>
+</html>
